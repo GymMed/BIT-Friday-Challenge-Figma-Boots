@@ -1,0 +1,204 @@
+:root {
+    --gd-font-size-1: 3rem;
+    --gd-font-size-2: 2.5rem;
+    --gd-font-size-3: 2rem;
+    --gd-font-size-4: 1.5rem;
+    --gd-font-size-5: 1rem;
+    --secondary: #d789a3;
+    --light-accent: rgb(255, 255, 255);
+    --dark-accent: rgb(0, 0, 0);
+    --disabled: #999999;
+    --active: #111111;
+}
+
+* {
+    /* font-family: "Jost", sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__ul__li:hover {
+    transform: scale(1.1);
+    color: var(--secondary);
+}
+.nav__ul__li {
+    padding: 0.5rem 0.25rem;
+}
+.nav__ul__li a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--secondary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__ul__li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-user {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+}
+
+.button-wrapper__button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-user__button-wrapper:hover .button-wrapper__button {
+    background-color: var(--secondary);
+}
+
+.nav-user__button-wrapper:hover .button-wrapper__button__path {
+    fill: var(--light-accent);
+}
+
+.carousel__section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__section__texts {
+    z-index: 1;
+}
+
+.texts {
+}
+
+.texts--small {
+    font-size: var(--gd-font-size-5);
+    font-weight: bold;
+}
+
+.texts--big {
+    font-size: var(--gd-font-size-1);
+    font-weight: 900;
+    margin: 1rem 0rem;
+    line-height: 4rem;
+    font-family: "Sofia Pro", sans-serif;
+    letter-spacing: -0.125rem;
+    width: 10rem;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.texts-button-wrapper__button {
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.texts-button-wrapper__button:hover {
+    background-color: var(--secondary);
+}
+
+.carousel-absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-absolute__buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 5rem;
+    box-sizing: border-box;
+}
+
+.buttons__next,
+.buttons__previous {
+    background-color: transparent;
+    border: none;
+}
+
+.buttons__next__svg-path,
+.buttons__previous__svg-path {
+    fill: var(--active);
+}
+
+.disabled {
+    fill: var(--disabled);
+}
+
+.carousel-absolute__slide-counter {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.dot-container {
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+}
+
+.active {
+    border: 1px solid var(--active);
+}
+
+.dot {
+    background-color: var(--dark-accent);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    border-spacing: 0.25rem;
+}

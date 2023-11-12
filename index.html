@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shoe Advertisment</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.cdnfonts.com/css/sofia-pro"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Logo" class="logo__img" />
+                </div>
+                <nav>
+                    <ul class="nav__ul">
+                        <li class="nav__ul__li"><a href="#Home">Home</a></li>
+                        <li class="nav__ul__li"><a href="#Shop">Shop</a></li>
+                        <li class="nav__ul__li">
+                            <a href="Products">Products</a>
+                        </li>
+                        <li class="nav__ul__li"><a href="#Pages">Pages</a></li>
+                        <li class="nav__ul__li"><a href="#Blog">Blog</a></li>
+                        <li class="nav__ul__li">
+                            <a href="#Elements">Elements</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-user">
+                    <div class="nav-user__button-wrapper">
+                        <button type="button" class="button-wrapper__button">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="button-wrapper__button__path"
+                                    d="M23.8442 22.8203C24.0786 23.0286 24.0786 23.25 23.8442 23.4844L22.9849 24.3438C22.7505 24.5781 22.5291 24.5781 22.3208 24.3438L17.5942 19.6172C17.4901 19.513 17.438 19.4089 17.438 19.3047V18.7578C15.9015 20.0859 14.1307 20.75 12.1255 20.75C9.8859 20.75 7.97184 19.9557 6.3833 18.3672C4.79476 16.7786 4.00049 14.8646 4.00049 12.625C4.00049 10.3854 4.79476 8.47135 6.3833 6.88281C7.97184 5.29427 9.8859 4.5 12.1255 4.5C14.3651 4.5 16.2791 5.29427 17.8677 6.88281C19.4562 8.47135 20.2505 10.3854 20.2505 12.625C20.2505 14.6302 19.5864 16.401 18.2583 17.9375H18.8052C18.9354 17.9375 19.0396 17.9896 19.1177 18.0938L23.8442 22.8203ZM7.71143 17.0391C8.93538 18.263 10.4067 18.875 12.1255 18.875C13.8442 18.875 15.3156 18.263 16.5396 17.0391C17.7635 15.8151 18.3755 14.3438 18.3755 12.625C18.3755 10.9062 17.7635 9.4349 16.5396 8.21094C15.3156 6.98698 13.8442 6.375 12.1255 6.375C10.4067 6.375 8.93538 6.98698 7.71143 8.21094C6.48747 9.4349 5.87549 10.9062 5.87549 12.625C5.87549 14.3438 6.48747 15.8151 7.71143 17.0391Z"
+                                    fill="#111111"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-user__button-wrapper">
+                        <button type="button" class="button-wrapper__button">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="button-wrapper__button__path"
+                                    d="M17.5161 16.375C18.9484 16.375 20.1724 16.8958 21.188 17.9375C22.2297 18.9531 22.7505 20.1771 22.7505 21.6094V22.625C22.7505 23.1458 22.5682 23.5885 22.2036 23.9531C21.839 24.3177 21.3963 24.5 20.8755 24.5H7.12549C6.60465 24.5 6.16195 24.3177 5.79736 23.9531C5.43278 23.5885 5.25049 23.1458 5.25049 22.625V21.6094C5.25049 20.1771 5.7583 18.9531 6.77393 17.9375C7.81559 16.8958 9.05257 16.375 10.4849 16.375C10.8234 16.375 11.3182 16.4792 11.9692 16.6875C12.6463 16.8958 13.3234 17 14.0005 17C14.6776 17 15.3547 16.8958 16.0317 16.6875C16.7088 16.4792 17.2036 16.375 17.5161 16.375ZM20.8755 22.625V21.6094C20.8755 20.6979 20.5369 19.9167 19.8599 19.2656C19.2088 18.5885 18.4276 18.25 17.5161 18.25C17.438 18.25 17.0213 18.3542 16.2661 18.5625C15.5369 18.7708 14.7817 18.875 14.0005 18.875C13.2192 18.875 12.451 18.7708 11.6958 18.5625C10.9666 18.3542 10.563 18.25 10.4849 18.25C9.5734 18.25 8.77913 18.5885 8.10205 19.2656C7.45101 19.9167 7.12549 20.6979 7.12549 21.6094V22.625H20.8755ZM17.9849 14.1094C16.8911 15.2031 15.563 15.75 14.0005 15.75C12.438 15.75 11.1099 15.2031 10.0161 14.1094C8.92236 13.0156 8.37549 11.6875 8.37549 10.125C8.37549 8.5625 8.92236 7.23438 10.0161 6.14062C11.1099 5.04688 12.438 4.5 14.0005 4.5C15.563 4.5 16.8911 5.04688 17.9849 6.14062C19.0786 7.23438 19.6255 8.5625 19.6255 10.125C19.6255 11.6875 19.0786 13.0156 17.9849 14.1094ZM16.6567 7.46875C15.9276 6.73958 15.0422 6.375 14.0005 6.375C12.9588 6.375 12.0734 6.73958 11.3442 7.46875C10.6151 8.19792 10.2505 9.08333 10.2505 10.125C10.2505 11.1667 10.6151 12.0521 11.3442 12.7812C12.0734 13.5104 12.9588 13.875 14.0005 13.875C15.0422 13.875 15.9276 13.5104 16.6567 12.7812C17.3859 12.0521 17.7505 11.1667 17.7505 10.125C17.7505 9.08333 17.3859 8.19792 16.6567 7.46875Z"
+                                    fill="#111111"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-user__button-wrapper">
+                        <button type="button" class="button-wrapper__button">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="button-wrapper__button__path"
+                                    d="M21.9302 7C22.8677 7.80729 23.4927 8.77083 23.8052 9.89062C24.1177 10.9844 24.1307 12.0391 23.8442 13.0547C23.5578 14.0703 23.063 14.9427 22.3599 15.6719L15.5239 22.625C15.1073 23.0417 14.6125 23.25 14.0396 23.25C13.4666 23.25 12.9718 23.0417 12.5552 22.625L5.71924 15.6719C5.01611 14.9427 4.52132 14.0703 4.23486 13.0547C3.9484 12.013 3.96143 10.9453 4.27393 9.85156C4.58643 8.75781 5.21143 7.80729 6.14893 7C7.26872 6.0625 8.58382 5.65885 10.0942 5.78906C11.6307 5.89323 12.9458 6.49219 14.0396 7.58594C15.1333 6.49219 16.4354 5.89323 17.9458 5.78906C19.4823 5.65885 20.8104 6.0625 21.9302 7ZM21.0317 14.3438C21.7869 13.5625 22.1646 12.612 22.1646 11.4922C22.1646 10.3464 21.6958 9.33073 20.7583 8.44531C19.9771 7.82031 19.0656 7.54688 18.0239 7.625C17.0083 7.70312 16.1359 8.11979 15.4067 8.875L14.0396 10.2422L12.6724 8.875C11.9432 8.11979 11.0578 7.70312 10.0161 7.625C9.00049 7.54688 8.10205 7.82031 7.3208 8.44531C6.3833 9.33073 5.91455 10.3464 5.91455 11.4922C5.91455 12.612 6.29215 13.5625 7.04736 14.3438L13.9224 21.2969C14.0005 21.401 14.0786 21.401 14.1567 21.2969L21.0317 14.3438Z"
+                                    fill="#111111"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-user__button-wrapper">
+                        <button type="button" class="button-wrapper__button">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="button-wrapper__button__path"
+                                    d="M19.0005 9.5H22.7505V21.375C22.7505 22.2344 22.438 22.9635 21.813 23.5625C21.214 24.1875 20.4849 24.5 19.6255 24.5H8.37549C7.51611 24.5 6.77393 24.1875 6.14893 23.5625C5.54997 22.9635 5.25049 22.2344 5.25049 21.375V9.5H9.00049C9.00049 8.11979 9.48226 6.94792 10.4458 5.98438C11.4354 4.99479 12.6203 4.5 14.0005 4.5C15.3807 4.5 16.5526 4.99479 17.5161 5.98438C18.5057 6.94792 19.0005 8.11979 19.0005 9.5ZM16.188 7.3125C15.589 6.6875 14.8599 6.375 14.0005 6.375C13.1411 6.375 12.3989 6.6875 11.7739 7.3125C11.175 7.91146 10.8755 8.64062 10.8755 9.5H17.1255C17.1255 8.64062 16.813 7.91146 16.188 7.3125ZM20.8755 21.375V11.375H19.0005V12.9375C19.0005 13.1979 18.9093 13.4193 18.7271 13.6016C18.5448 13.7839 18.3234 13.875 18.063 13.875C17.8026 13.875 17.5812 13.7839 17.3989 13.6016C17.2166 13.4193 17.1255 13.1979 17.1255 12.9375V11.375H10.8755V12.9375C10.8755 13.1979 10.7843 13.4193 10.6021 13.6016C10.4198 13.7839 10.1984 13.875 9.93799 13.875C9.67757 13.875 9.45622 13.7839 9.27393 13.6016C9.09163 13.4193 9.00049 13.1979 9.00049 12.9375V11.375H7.12549V21.375C7.12549 21.7135 7.24268 22 7.47705 22.2344C7.73747 22.4948 8.03695 22.625 8.37549 22.625H19.6255C19.964 22.625 20.2505 22.4948 20.4849 22.2344C20.7453 22 20.8755 21.7135 20.8755 21.375Z"
+                                    fill="#111111"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="carousel">
+                    <div class="carousel-absolute">
+                        <div class="carousel-absolute__buttons">
+                            <button type="button" class="buttons__previous">
+                                <svg
+                                    width="42"
+                                    height="22"
+                                    viewBox="0 0 42 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        class="buttons__previous__svg-path"
+                                        d="M42 11C42 10.4933 41.6162 10.0833 41.1429 10.0833L2.92634 10.0833L10.8917 1.56478C11.2266 1.2067 11.2266 0.626623 10.8917 0.268555C10.5569 -0.0895136 10.0145 -0.0895228 9.67969 0.268555L0.251846 10.3511C0.172485 10.4358 0.109653 10.5372 0.0661278 10.6498C0.0228081 10.7618 0 10.8807 0 11C0 11.1193 0.0227585 11.2382 0.0660782 11.3502C0.109653 11.4627 0.172493 11.5642 0.251854 11.6489L9.6797 21.7314C10.0145 22.0895 10.5569 22.0895 10.8917 21.7314C11.2266 21.3734 11.2266 20.7933 10.8917 20.4352L2.92634 11.9167L41.1429 11.9167C41.6162 11.9167 42 11.5067 42 11Z"
+                                        fill="#999999"
+                                    />
+                                </svg>
+                            </button>
+                            <button type="button" class="buttons__next">
+                                <svg
+                                    width="42"
+                                    height="22"
+                                    viewBox="0 0 42 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        class="buttons__next__svg-path"
+                                        d="M0 11C0 11.5067 0.383797 11.9167 0.857166 11.9167L39.0747 11.9167L31.1091 20.4352C30.9417 20.6143 30.858 20.8488 30.858 21.0833C30.858 21.3179 30.9417 21.5524 31.1091 21.7314C31.4439 22.0895 31.9863 22.0895 32.3212 21.7314L41.7493 11.6489C41.8286 11.5642 41.8915 11.4628 41.9351 11.3502C42.0217 11.1262 42.0216 10.8738 41.935 10.6498C41.8915 10.5372 41.8286 10.4358 41.7493 10.3511L32.3212 0.268558C31.9863 -0.0895194 31.4439 -0.0895194 31.1091 0.268558C30.7743 0.626635 30.7743 1.20671 31.1091 1.56478L39.0747 10.0833L0.857166 10.0833C0.383797 10.0833 0 10.4933 0 11Z"
+                                        fill="#111111"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel__section">
+                        <div class="carousel__section__texts">
+                            <div class="texts texts--small">
+                                Sneaker Collection
+                            </div>
+                            <div class="texts texts--big">
+                                GOOD SHOES<br />
+                                TAKE YOU<br />
+                                GOOD PLACES
+                            </div>
+                            <div class="texts-button-wrapper">
+                                <button
+                                    type="button"
+                                    class="texts-button-wrapper__button"
+                                >
+                                    Shop Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel__section__img-container">
+                            <img
+                                src="images/Shoes-block.png"
+                                alt="Modern Shoe"
+                                class="img-container__img"
+                            />
+                        </div>
+                    </div>
+                    <div class="carousel__section">
+                        <div class="carousel__section__texts"></div>
+                        <div class="carousel__section__img-container">
+                            <img
+                                src="images/Shoes-block.png"
+                                alt="Modern Shoe"
+                                class="img-container__img"
+                            />
+                        </div>
+                    </div>
+                    <div class="carousel__section">
+                        <div class="carousel__section__texts">
+                            <div class="texts texts--small">
+                                Sneaker Collection
+                            </div>
+                            <div class="texts texts--big">
+                                GOOD SHOES<br />
+                                TAKE YOU<br />
+                                GOOD PLACES
+                            </div>
+                            <div class="texts-button-wrapper">
+                                <button
+                                    type="button"
+                                    class="texts-button-wrapper__button"
+                                >
+                                    Shop Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel__section__img-container">
+                            <img
+                                src="images/Shoes-block.png"
+                                alt="Modern Shoe"
+                                class="img-container__img"
+                            />
+                        </div>
+                    </div>
+                    <div class="carousel-absolute__slide-counter">
+                        <div class="dots-wrapper">
+                            <!-- <div class="dot-container">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="dot-container">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="dot-container">
+                                <div class="dot"></div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer></footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
